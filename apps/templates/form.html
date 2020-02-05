@@ -1,5 +1,5 @@
 <p>Add New {{ model_name }}</p>
-<form method="POST">{% csrf_token %}
+<form enctype="multipart/form-data" method="POST">{% csrf_token %}
     {{ form }}
     <input type="submit" name="submit" value="Submit">
 </form>

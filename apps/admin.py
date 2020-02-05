@@ -3,7 +3,7 @@ from .models import Book, Publication
 
 @admin.register(Publication)
 class PublicationAdmin(admin.ModelAdmin):
-    list_display = ('name', 'contact', 'address', 'active')
+    list_display = ('name', 'contact', 'address', 'active', 'slug',)
     list_editable = ('active', )
 
 @admin.register(Book)
